@@ -1,0 +1,5 @@
+$entries = ee('Model')
+    ->get('Category')
+    ->filter('group_id', 1234)
+    ->order('cat_name', 'asc')
+    ->all();
